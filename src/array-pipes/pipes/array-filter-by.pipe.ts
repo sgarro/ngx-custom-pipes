@@ -12,14 +12,14 @@ export class ArrayFilterPipe implements PipeTransform {
       return array;
     }
     if (typeof array[0] === 'string') {
-      return array.filter((item) => item.indexOf(searchText) > -1);
+      return array.filter((item) => item.tindexOf(searchText) > -1);
     }
     // filter array, items which match and return true will be
     // kept, false will be filtered out
     if (!keyName) {
       return array.filter((item: any) => {
         for (const key in item) {
-          if (typeof item[key] !== "object" && item[key].toString().indexOf(searchText) > -1) {
+          if (typeof item[key] !== "object" && item[key].toString().toLowerCase().indexOf(searchText.toLowerCase()) > -1) {
             return true;
           }
         }

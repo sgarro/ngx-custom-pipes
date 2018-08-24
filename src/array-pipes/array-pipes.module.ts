@@ -13,19 +13,20 @@ import { ArrayMaxPipe } from './pipes/array-max.pipe';
 import { ArrayLtrimPipe } from './pipes/array-ltrim.pipe';
 import { ArrayLimitToPipe } from './pipes/array-limit-to.pipe';
 import { ArrayFilterPipe } from './pipes/array-filter-by.pipe';
+import { ArrayFilterByPipe } from './pipes/array-filter-letter.pipe';
 import { ArrayDupesPipe } from './pipes/array-dupes.pipe';
 import { ArrayDiffPipe } from './pipes/array-diff.pipe';
 import { ArrayContainsPipe } from './pipes/array-contains.pipe';
 import { NgModule } from "@angular/core";
 
 @NgModule({
-  declarations: [ArrayContainsPipe, ArrayDiffPipe, ArrayDupesPipe, ArrayFilterPipe, ArrayLimitToPipe,
+  declarations: [ArrayContainsPipe, ArrayFilterByPipe, ArrayDiffPipe, ArrayDupesPipe, ArrayFilterPipe, ArrayLimitToPipe,
     ArrayLtrimPipe, ArrayMaxPipe, ArrayMergePipe, ArrayMinPipe, ArrayOmitPipe, ArrayRangePipe, ArrayUniquePipe,
     ArrayReversePipe, ArrayRtrimPipe, ArrayShufflePipe, ArraySortByPipe, ArraySumPipe, ArrayTrimPipe],
   imports: [],
   exports: [ArrayContainsPipe, ArrayDiffPipe, ArrayDupesPipe, ArrayFilterPipe, ArrayLimitToPipe,
     ArrayLtrimPipe, ArrayMaxPipe, ArrayMergePipe, ArrayMinPipe, ArrayOmitPipe, ArrayRangePipe, ArrayUniquePipe,
-    ArrayReversePipe, ArrayRtrimPipe, ArrayShufflePipe, ArraySortByPipe, ArraySumPipe, ArrayTrimPipe],
+    ArrayReversePipe, ArrayRtrimPipe, ArrayFilterByPipe, ArrayShufflePipe, ArraySortByPipe, ArraySumPipe, ArrayTrimPipe],
   providers: [],
   bootstrap: []
 })
