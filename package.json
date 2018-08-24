@@ -46,6 +46,7 @@
     "explorer": "source-map-explorer ./dist/index.umd.js",
     "lint": "npm run tslint 'src/**/*.ts'",
     "ngcompile": "node_modules/.bin/ngc -p tsconfig-aot.json",
+    "prepare": "npm run build",
     "postversion": "git push && git push --tags",
     "prebuild": "rimraf dist tmp",
     "prebuild:watch": "rimraf dist tmp",
